@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> 소개 </title>
+
+    <!--My css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="image/logo.png" type="image/png">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav id="Navbar" class="navbar px-3 px-md-5 py-md-1">
+        <div class="website-name text-white">
+            <img src="image/logo.png" alt="">
+            <h2 class="logo-style ps-2"> EMOZIN SDN. BHD. </h2>
+        </div>
+
+        <div class="navbar-menu pe-5">
+            <ul class="navbar-menu-links">
+                <a href="home_korean.html">
+                    <li> 홈 </li>
+                </a>
+
+                <a href="About_korean.html">
+                    <li> 회사 소개 </li>
+                </a>
+
+                <a href="blog_korean.html">
+                    <li> 블로그 </li>
+                </a>
+
+                <a href="contact_korean.html">
+                    <li> 연락처 </li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="translate-container">
+            <a href="About.html" style="text-decoration: none;">
+                <button class="translate-button pt-1">
+                    <i class="fa-solid fa-globe pe-1"></i> English
+                </button>
+            </a>
+        </div>
+
+
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="about-header">
+
+        <div class="about-header-bg">
+            <img id="header-img" src="image/About-bg.jpg" alt="헤더 배경" class="about-bg-image">
+        </div>
+        <div class="gaming-overlay"></div>
+        <div class="About-gaming-content">
+            <h1 class="gaming-title"> 회사 소개 </h1>
+            <h5 class="text-white"> <a href="home.html" style="text-decoration: none; color: #fff;">홈</a> >> <span
+                    style="color:#00ffc8;"> 회사 소개 </span></h5>
+        </div>
+
+    </header>
+
+    <!--Side Navbar-->
+    <aside class="side-navbar">
+        <p class="cross-symbol" onclick="closenavbar()"> <i class="fa fa-times" aria-hidden="true"></i> </p>
+
+        <div class="side-bar-log">
+            <img src="image/logo.png" alt="">
+            <h2 class="text-white pt-3"> EMOZIN </h2>
+        </div>
+
+        <div class="side-navbar-links pt-4">
+            <p class="side-navbar-link"> <a href="home_korean.html"> 홈 </a> </p>
+            <p class="side-navbar-link"> <a href="About_korean.html"> 회사 소개 </a> </p>
+            <p class="side-navbar-link"> <a href="blog_korean.html"> 블로그 </a> </p>
+            <p class="side-navbar-link"> <a href="contact_korean.html"> 연락처 </a> </p>
+
+            <div class="translate-container mt-5">
+                <a href="About.html" style="text-decoration: none;">
+                    <button class="translate-button w-100 pt-1">
+                        <i class="fa-solid fa-globe pe-1"></i> English
+                    </button>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <main class="About-main-section">
+        <!-- Service -->
+        <section class="about-service-section">
+            <div class="container-fluid h-100 text-light px-3 py-5">
+                <div class="row h-100 align-items-center">
+                    <div class="col-md-12 col-lg-6 service-text-section px-md-5">
+                        <div>
+                            <h6 style="color: #00ffe1;">강력한 서비스</h6>
+                            <h1 class="fw-bold">우리의 영향력 있는 서비스 <br> 정시 제공</h1>
+                            <div class="row gx-5 pt-4">
+                                <div class="col-12 col-sm-6 col-md-6 game-service-box"
+                                    data-img="image/service-img1.jpg">
+                                    <div class="game-service-content">
+                                        <div class="icon"> <img src="image/service-box-img2.png" alt=""> </div>
+                                        <h5>엘리트 게임 경험</h5>
+                                        <p>FPS, RPG, MMO에서 10년 이상의 최고 수준의 게임 플레이 경험.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-6 game-service-box"
+                                    data-img="image/service-img2.avif">
+                                    <div class="game-service-content">
+                                        <div class="icon"> <img src="image/service-box-img1.png" alt=""> </div>
+                                        <h5>프로 이스포츠 팀</h5>
+                                        <p>우리 팀은 전투 준비 완료—랭크 경기, 토너먼트, 승리.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-6 game-service-box"
+                                    data-img="image/service-img3.png">
+                                    <div class="game-service-content">
+                                        <div class="icon"><img src="image/service-box-img3.png" alt=""></div>
+                                        <h5>차세대 NFT 게임</h5>
+                                        <p>블록체인 기반의 게임 플레이, 희귀 아이템, 암호화 보상 경험.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-6 game-service-box"
+                                    data-img="image/service-img4.png">
+                                    <div class="game-service-content">
+                                        <div class="icon"> <img src="image/service-box-img4.png" alt=""> </div>
+                                        <h5>글로벌 게이머 커뮤니티</h5>
+                                        <p>50개 이상의 국가에서 온 플레이어들과 함께하는 대규모 온라인 전투 및 길드.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-6 service-img-section text-center">
+                        <div class="service-img-wrapper position-relative">
+                            <img src="image/service-img.jpg" id="mainImage" class="img-fluid rounded" />
+                            <div class="arrow-circle"> ➤ </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- our story -->
+        <section class="our-story-secction py-5">
+            <div class="container">
+                <h2 class="text-center pb-3" style="color: #00ffc8;">우리의 이야기</h2>
+                <div class="timeline">
+
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <img src="image/story-img1.jpg" alt="게임 구매" class="timeline-img">
+                            <h5 class="mt-3 text-white">게임 구매 <small class="text-white float-end">2025/01/14</small>
+                            </h5>
+                            <p class="text-white">오랫동안 확립된 사실은 독자가 읽을 수 있는 콘텐츠에 의해 방해받을 수 있다는 것입니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <img src="image/story-img2.jpg" alt="캐릭터 생성" class="timeline-img">
+                            <h5 class="mt-3 text-white">캐릭터 생성 <small class="text-white float-end">2025/01/25</small>
+                            </h5>
+                            <p class="text-white">오랫동안 확립된 사실은 독자가 읽을 수 있는 콘텐츠에 의해 방해받을 수 있다는 것입니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <img src="image/story-img3.jpg" alt="친구와 게임하기" class="timeline-img">
+                            <h5 class="mt-3 text-white">친구와 게임하기 <small class="text-white float-end">2025/02/02</small>
+                            </h5>
+                            <p class="text-white">오랫동안 확립된 사실은 독자가 읽을 수 있는 콘텐츠에 의해 방해받을 수 있다는 것입니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <img src="image/footer-bg.jpg" alt="게임 종료" class="timeline-img">
+                            <h5 class="mt-3 text-white">게임 종료 <small class="text-white float-end">2025/02/15</small>
+                            </h5>
+                            <p class="text-white">오랫동안 확립된 사실은 독자가 읽을 수 있는 콘텐츠에 의해 방해받을 수 있다는 것입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-games">
+            <div class="container-fluid px-3 px-md-5 py-5">
+                <div class="row">
+                    <!-- Popular Games -->
+                    <div class="popular-games-section col-lg-8">
+                        <h4 class="ps-3 mb-4">인기 게임</h4>
+                        <div class="row g-4">
+
+                            <div class="col-md-4">
+                                <div class="card game-card">
+                                    <div class="position-relative">
+                                        <img src="image/popular-gaming-img1.jpg" class="card-img-top" alt="게임 포스터">
+                                        <span class="badge bg-danger position-absolute top-0 start-0 m-2"> 5v5 전술</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="badge bg-secondary">온라인</span>
+                                            <span class="badge bg-secondary">슈팅</span>
+                                        </div>
+                                        <h6 class="games-card-title">발로란트</h6>
+                                        <p class="text-white small mb-2">
+                                            격렬한 5v5 전술 전투에 참여하세요. 에이전트를 마스터하고, 라이벌을 이기고, 모든 라운드를 클러치하세요.
+                                        </p>
+                                        <div class="d-flex justify-content-between small">
+                                            <span><i class="bi bi-chat"></i> 25 </span>
+                                            <span><i class="bi bi-eye"></i> 18.2K </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card game-card">
+                                    <div class="position-relative">
+                                        <img src="image/popular-gaming-img2.jpg" class="card-img-top" alt="NFS Heat">
+                                        <span class="badge bg-danger position-absolute top-0 start-0 m-2">스트리트
+                                            레이싱</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="badge bg-dark">오프라인</span>
+                                            <span class="badge bg-warning text-dark">레이싱</span>
+                                        </div>
+                                        <h6 class="games-card-title">NFS 히트</h6>
+                                        <p class="text-white small mb-2">
+                                            팜시티의 거리를 질주하세요. 낮 레이스는 돈을 벌고, 밤 레이스는 존경을 얻습니다.
+                                        </p>
+                                        <div class="d-flex justify-content-between small">
+                                            <span><i class="bi bi-chat"></i> 12</span>
+                                            <span><i class="bi bi-eye"></i> 9.8K</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card game-card">
+                                    <div class="position-relative">
+                                        <img src="image/popular-gaming-img3.jpg" class="card-img-top"
+                                            alt="Resident Evil 4">
+                                        <span class="badge bg-danger position-absolute top-0 start-0 m-2">서바이벌 호러</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="badge bg-secondary">오프라인</span>
+                                            <span class="badge bg-secondary">호러</span>
+                                        </div>
+                                        <h6 class="games-card-title">레지던트 이블 4</h6>
+                                        <p class="text-white small mb-2">
+                                            무서운 적들과 싸우고 서바이벌 호러 클래식의 긴장감 넘치는 재구성에서 비밀을 밝혀보세요.
+                                        </p>
+                                        <div class="d-flex justify-content-between small">
+                                            <span><i class="bi bi-chat"></i> 8</span>
+                                            <span><i class="bi bi-eye"></i> 7.4K</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card game-card">
+                                    <div class="position-relative">
+                                        <img src="image/popular-gaming-img4.jpg" class="card-img-top" alt="PUBG">
+                                        <span class="badge bg-danger position-absolute top-0 start-0 m-2">배틀 로얄</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="badge bg-secondary">온라인</span>
+                                            <span class="badge bg-success">멀티플레이어</span>
+                                        </div>
+                                        <h6 class="games-card-title">PUBG</h6>
+                                        <p class="text-white small mb-2">
+                                            낙하하고 장비를 챙기고 살아남으세요. 이 상징적인 배틀로얄에서 마지막까지 살아남으세요.
+                                        </p>
+                                        <div class="d-flex justify-content-between small">
+                                            <span><i class="bi bi-chat"></i> 42</span>
+                                            <span><i class="bi bi-eye"></i> 23K</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card game-card">
+                                    <div class="position-relative">
+                                        <img src="image/popular-gaming-img5.jpg" class="card-img-top" alt="Elden Ring">
+                                        <span class="badge bg-danger position-absolute top-0 start-0 m-2">판타지 월드</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="badge bg-secondary">오픈 월드</span>
+                                            <span class="badge bg-secondary">RPG</span>
+                                        </div>
+                                        <h6 class="games-card-title">엘든 링</h6>
+                                        <p class="text-white small mb-2">
+                                            간섭의 땅을 여행하고 신들과 괴물들을 물리치며 신비를 풀어보세요.
+                                        </p>
+                                        <div class="d-flex justify-content-between small">
+                                            <span><i class="bi bi-chat"></i> 19</span>
+                                            <span><i class="bi bi-eye"></i> 15.1K</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card game-card">
+                                    <div class="position-relative">
+                                        <img src="image/popular-gaming-img6.jpg" class="card-img-top" alt="Spider-Man">
+                                        <span class="badge bg-danger position-absolute top-0 start-0 m-2">액션 어드벤처</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="badge bg-dark">스토리 모드</span>
+                                            <span class="badge bg-info">슈퍼히어로</span>
+                                        </div>
+                                        <h6 class="games-card-title">마일스 모랄레스</h6>
+                                        <p class="text-white small mb-2">
+                                            뉴욕시를 가로지르며 전기 능력을 발휘하고 새로운 스파이더맨으로 성장하세요.
+                                        </p>
+                                        <div class="d-flex justify-content-between small">
+                                            <span><i class="bi bi-chat"></i> 30</span>
+                                            <span><i class="bi bi-eye"></i> 12.6K</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- New Comments -->
+                    <div class="new-comments col-lg-4 pt-5 pt-md-0">
+                        <h4 class="ps-3 mb-4">새로운 댓글</h4>
+                        <div class="d-flex flex-column gap-3">
+
+                            <div class="d-flex new-comments-box bg-dark-subtle text-dark p-2 rounded">
+                                <img src="image/new-comments-img1.webp" alt="게임 썸네일" class="me-2">
+                                <div>
+                                    <div class="mb-1">
+                                        <span class="badge bg-dark">사이버펑크</span>
+                                        <span class="badge bg-dark">슈터</span>
+                                    </div>
+                                    <p class="mb-0 small">네온 하보크 – 메트로 잠금을 풀었어요, 정말 재밌었어요!</p>
+                                    <span class="small"><i class="bi bi-eye"></i> 24,321 조회수</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex new-comments-box bg-dark-subtle text-dark p-2 rounded">
+                                <img src="image/new-comments-img2.webp" alt="게임 썸네일" class="me-2">
+                                <div>
+                                    <div class="mb-1">
+                                        <span class="badge bg-dark">액션</span>
+                                        <span class="badge bg-dark">핵 앤 슬래시</span>
+                                    </div>
+                                    <p class="mb-0 small">아크블레이드 프로토콜 – 콤보 스트릭이 정말 짜릿해요!</p>
+                                    <span class="small"><i class="bi bi-eye"></i> 17,980 조회수</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex new-comments-box bg-dark-subtle text-dark p-2 rounded">
+                                <img src="image/new-comments-img3.webp" alt="게임 썸네일" class="me-2">
+                                <div>
+                                    <div class="mb-1">
+                                        <span class="badge bg-dark">보스전</span>
+                                        <span class="badge bg-dark">종말적</span>
+                                    </div>
+                                    <p class="mb-0 small">타이탄스톰 제로 – 첫 타이탄을 혼자 처치했어요! 가자!</p>
+                                    <span class="small"><i class="bi bi-eye"></i> 31,720 조회수</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex new-comments-box bg-dark-subtle text-dark p-2 rounded">
+                                <img src="image/trending-game1.jpeg" alt="게임 썸네일" class="me-2">
+                                <div>
+                                    <div class="mb-1">
+                                        <span class="badge bg-dark">멀티버스</span>
+                                        <span class="badge bg-dark">슈터</span>
+                                    </div>
+                                    <p class="mb-0 small">프로젝트 에코존 – 전투 중 포탈? 대박이에요!</p>
+                                    <span class="small"><i class="bi bi-eye"></i> 21,050 조회수</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex new-comments-box bg-dark-subtle text-dark p-2 rounded">
+                                <img src="image/trending-game2.jpg" alt="게임 썸네일" class="me-2">
+                                <div>
+                                    <div class="mb-1">
+                                        <span class="badge bg-dark">레이싱</span>
+                                        <span class="badge bg-dark">전투</span>
+                                    </div>
+                                    <p class="mb-0 small">드리프트코어: 업라이징 – 고속도로 보스 레이스!</p>
+                                    <span class="small"><i class="bi bi-eye"></i> 16,774 조회수</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex new-comments-box bg-dark-subtle text-dark p-2 rounded">
+                                <img src="image/trending-game3.jpeg" alt="게임 썸네일" class="me-2">
+                                <div>
+                                    <div class="mb-1">
+                                        <span class="badge bg-dark">우주</span>
+                                        <span class="badge bg-dark">RPG</span>
+                                    </div>
+                                    <p class="mb-0 small">노바리프트 – 빛나는 외계 행성에 착륙했어요.</p>
+                                    <span class="small"><i class="bi bi-eye"></i> 29,818 조회수</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex new-comments-box bg-dark-subtle text-dark p-2 rounded">
+                                <img src="image/trending-game4.jpeg" alt="게임 썸네일" class="me-2">
+                                <div>
+                                    <div class="mb-1">
+                                        <span class="badge bg-dark">러너</span>
+                                        <span class="badge bg-dark">아케이드</span>
+                                    </div>
+                                    <p class="mb-0 small">스펙트라 런 – 레벨을 놓쳤어요! </p>
+                                    <span class="small"><i class="bi bi-eye"></i> 12,345 조회수</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex new-comments-box bg-dark-subtle text-dark p-2 rounded">
+                                <img src="image/trending-game6.jpeg" alt="게임 썸네일" class="me-2">
+                                <div>
+                                    <div class="mb-1">
+                                        <span class="badge bg-dark">미스터리</span>
+                                        <span class="badge bg-dark">퍼즐</span>
+                                    </div>
+                                    <p class="mb-0 small">크립틱 던 – 마지막 퍼즐을 푸는 데 2시간 걸렸어요.</p>
+                                    <span class="small"><i class="bi bi-eye"></i> 14,003 조회수</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex new-comments-box bg-dark-subtle text-dark p-2 rounded">
+                                <img src="image/trending-game7.jpeg" alt="게임 썸네일" class="me-2">
+                                <div>
+                                    <div class="mb-1">
+                                        <span class="badge bg-dark">메카</span>
+                                        <span class="badge bg-dark">아레나</span>
+                                    </div>
+                                    <p class="mb-0 small">아이언 보텍스 – 한 라운드에 4명의 적 봇을 처치했어요.</p>
+                                    <span class="small"><i class="bi bi-eye"></i> 27,990 조회수</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-title pb-5">
+                <img src="image/logo.png" alt="">
+                <h1 class="ps-2 pt-3">EMOZIN</h1>
+            </div>
+            <div class="row text-start px-2">
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="fw-bold mb-2">EMOZIN 탐색</div>
+                    <a href="#">최고 평점 게임</a><br>
+                    <a href="#">신규 출시</a><br>
+                    <a href="#">게임 공략</a><br>
+                    <a href="#">멀티플레이어 아레나</a><br>
+                    <a href="#">프로 팁 & 트릭</a><br>
+                    <a href="#">EMOZIN 커뮤니티</a>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="fw-bold mb-2">개요</div>
+                    <a href="#">소개</a><br>
+                    <a href="#">연락처</a><br>
+                    <a href="#">이용 약관</a><br>
+                    <a href="#">개인정보 보호정책</a><br>
+                    <a href="#">전 세계 사이트맵</a><br>
+                    <a href="#">지역 사이트맵</a>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="fw-bold mb-2">커뮤니티</div>
+                    <a href="#">커뮤니티 센터</a><br>
+                    <a href="#">지원</a><br>
+                    <a href="#">도움말</a><br>
+                    <a href="#">내 정보 판매 금지</a>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="fw-bold mb-2">광고</div>
+                    <a href="#">미디어 키트</a><br>
+                    <a href="#">연락처</a><br>
+                    <a href="#">광고하기</a><br>
+                    <a href="#">파트너십 기회</a>
+                </div>
+
+                <div class="col-12 col-md-8 col-lg-4">
+                    <div class="fw-bold mb-1">EMOZIN 앱</div>
+                    <p style="color: rgb(163, 158, 158);">EMOZIN으로 게임 경험을 향상시키세요 – 게임 가이드, 업데이트, 커뮤니티 배틀을 위한 원스톱 플랫폼입니다.
+                        아이템 드롭, 퀘스트, 파워업을 놓치지 마세요!</p>
+
+                    <div class="app-icons mb-3">
+                        <img src="image/google-play-logo.png" alt="App Store">
+                        <img src="image/app-store-logo.png" alt="Google Play">
+                    </div>
+                    <div class="app-icons">
+                        <img src="image/google-play-logo.png" alt="App Store">
+                        <img src="image/app-store-logo.png" alt="Google Play">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4 footer-social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="bike-animation">
+            <img src="image/footer-running-img.png" class="bike-img" alt="Bike">
+        </div>
+
+    </footer>
+
+    <script src="script.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"> </script>
+</body>
+
+</html>
